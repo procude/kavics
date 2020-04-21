@@ -21,7 +21,7 @@ public class Operator {
                     case 1:
                         return true;
                     case 2:
-                        if (this.irany == 'v') {
+                        if (this.irany == 'h') {
                             if (this.oszlop + 1 < 5)
                                 return allapot.tabla[this.sor][this.oszlop + 1] != 0;
                         } else {
@@ -29,7 +29,7 @@ public class Operator {
                                 return allapot.tabla[this.sor + 1][this.oszlop] != 0;
                         }
                     case 3:
-                        if (this.irany == 'v') {
+                        if (this.irany == 'h') {
                             if (this.oszlop + 2 < 5)
                                 return (allapot.tabla[this.sor][this.oszlop + 1] != 0) && (allapot.tabla[this.sor][this.oszlop + 2] != 0);
                         } else {
@@ -37,7 +37,7 @@ public class Operator {
                                 return (allapot.tabla[this.sor + 1][this.oszlop] != 0) && (allapot.tabla[this.sor + 2][this.oszlop] != 0);
                         }
                     case 4:
-                        if (this.irany == 'v') {
+                        if (this.irany == 'h') {
                             if (this.oszlop + 3 < 5)
                                 return ((allapot.tabla[this.sor][this.oszlop + 1] != 0) && (allapot.tabla[this.sor][this.oszlop + 2] != 0)) && (allapot.tabla[this.sor][this.oszlop + 3] != 0);
                         } else {
@@ -61,7 +61,7 @@ public class Operator {
             for (int j = 0; j < 5; j++)
                 b[i][j] = a[i][j];
 
-        if (this.irany == 'v') {
+        if (this.irany == 'h') {
             for (int i = 0; i < this.db; i++)
                 b[this.sor ][this.oszlop + i] = 0;
             return uj;

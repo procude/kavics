@@ -5,11 +5,11 @@ public class Allapot {
     Jatekos jatekos;
 
     public Allapot(Jatekos jatekos) {
-        this.tabla = new int[][]{{1, 1, 1, 1, 1},
-                                 {1, 1, 1, 1, 1},
-                                 {1, 1, 1, 1, 1},
-                                 {1, 1, 1, 1, 1},
-                                 {1, 1, 1, 1, 1}};
+        this.tabla = new int[][]{{0, 0, 0, 0, 0},
+                                 {0, 1, 1, 1, 1},
+                                 {0, 1, 1, 1, 1},
+                                 {0, 1, 1, 1, 1},
+                                 {0, 1, 1, 1, 1}};
         this.jatekos = jatekos;
     }
 

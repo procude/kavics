@@ -28,7 +28,7 @@ public class Jatek {
             do {
                 switch (allapot.jatekos) {
                     case Gep:
-                        operator = MiniMax.lepes(allapot, p, 3);
+                        operator = MiniMax.lepes(allapot, p, 2);
                         System.out.println(operator);
                         TimeUnit.SECONDS.sleep(5);
                         break;
